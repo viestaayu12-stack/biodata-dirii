@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biodata – Viesta Ikue Ayu Ariyanti</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#faf7ff; --surface:#ffffff; --ink:#1f1633; --muted:#645b7a; --line:#e3dcf2; --link:#6d28d9;
+  --c1:#7c3aed; --c2:#ec4899; --c3:#f59e0b; --c4:#06b6d4; --c5:#22c55e;
+  --serif:'Fraunces',Georgia,serif; --sans:'Hanken Grotesk',system-ui,sans-serif;
+  --pelangi:linear-gradient(90deg,#7c3aed,#ec4899,#f59e0b,#22c55e,#06b6d4,#7c3aed);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#120d1f;--surface:#1c1530;--ink:#f1ecfb;--muted:#b0a5c9;--line:#35294f;--link:#c4a6ff}
+}
+:root[data-theme="dark"]{--bg:#120d1f;--surface:#1c1530;--ink:#f1ecfb;--muted:#b0a5c9;--line:#35294f;--link:#c4a6ff}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.7 var(--sans);overflow-x:hidden}
+a:focus-visible,button:focus-visible{outline:3px solid var(--c3);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 clamp(18px,5vw,48px)}
+
+/* progress bar */
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:var(--pelangi);background-size:300% 100%;z-index:20;animation:geser 6s linear infinite}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
+nav a{padding:6px 14px;border-radius:999px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.92rem;white-space:nowrap;transition:background .25s,transform .25s}
+nav a:hover{transform:translateY(-2px)}
+nav a:nth-of-type(1):hover{background:color-mix(in srgb,var(--c1) 24%,var(--bg))}
+nav a:nth-of-type(2):hover{background:color-mix(in srgb,var(--c4) 24%,var(--bg))}
+nav a:nth-of-type(3):hover{background:color-mix(in srgb,var(--c3) 26%,var(--bg))}
+nav a:nth-of-type(4):hover{background:color-mix(in srgb,var(--c5) 24%,var(--bg))}
+nav a:nth-of-type(5):hover{background:color-mix(in srgb,var(--c2) 24%,var(--bg))}
+nav button{margin-left:auto;flex:none;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font:600 .88rem var(--sans);cursor:pointer}
+
+/* hero */
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(120deg,#5b21b6,#be185d,#ea580c,#0891b2,#5b21b6);background-size:300% 300%;animation:geser 16s ease-in-out infinite alternate}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 250px;gap:clamp(24px,5vw,60px);align-items:center;padding-top:clamp(44px,8vw,92px);padding-bottom:clamp(52px,9vw,100px)}
+.blob{position:absolute;border-radius:50%;filter:blur(40px);opacity:.55;animation:melayang 9s ease-in-out infinite}
+.b1{width:300px;height:300px;background:#fde047;top:-90px;left:-70px}
+.b2{width:340px;height:340px;background:#22d3ee;bottom:-140px;right:12%;animation-delay:-3s}
+.b3{width:240px;height:240px;background:#f472b6;top:30%;right:-60px;animation-delay:-6s}
+.sapaan{margin:0 0 10px;font-size:1.1rem;color:#fde68a;font-weight:600}
+h1{font:800 clamp(2.5rem,8vw,5.2rem)/.98 var(--serif);margin:0 0 20px;letter-spacing:-.025em;background:linear-gradient(90deg,#fff 20%,#fde047 40%,#fff 60%,#a5f3fc 80%,#fff);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:kilau 6s linear infinite}
+.lead{max-width:46ch;margin:0 0 26px;font-size:1.1rem}
+.tombol{display:flex;flex-wrap:wrap;gap:10px}
+.tombol a{padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;background:#fde047;color:#2b1052;transition:transform .25s,box-shadow .25s}
+.tombol a:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 10px 24px rgba(0,0,0,.28)}
+.tombol a.alt{background:rgba(255,255,255,.14);color:#fff;border:1.5px solid rgba(255,255,255,.7)}
+
+/* foto dengan cincin warna berputar */
+.fotobox{position:relative;padding:6px;border-radius:130px 130px 22px 22px;background:conic-gradient(from var(--a),#fde047,#f472b6,#22d3ee,#4ade80,#fde047);animation:putar 5s linear infinite;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.foto{width:100%;aspect-ratio:4/5;border-radius:124px 124px 17px 17px;background:linear-gradient(160deg,#fde047,#fb7185);color:#5b21b6;display:grid;place-items:center;font:800 5rem var(--serif);overflow:hidden;animation:napas 6s ease-in-out infinite}
+.foto img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* pita berjalan */
+.pita{overflow:hidden;background:var(--ink);color:var(--bg);padding:12px 0;white-space:nowrap}
+.pita div{display:inline-block;animation:jalan 28s linear infinite;font-weight:700;letter-spacing:.02em}
+.pita span{margin:0 18px}
+.pita span:nth-child(5n+1){color:#fde047}.pita span:nth-child(5n+2){color:#f9a8d4}.pita span:nth-child(5n+3){color:#67e8f9}.pita span:nth-child(5n+4){color:#86efac}.pita span:nth-child(5n+5){color:#c4b5fd}
+
+/* ringkas */
+.ringkas{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.ringkas div{padding:20px 22px;border-radius:16px;border:1.5px solid var(--line);transition:transform .3s,box-shadow .3s}
+.ringkas div:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:0 16px 30px rgba(124,58,237,.2)}
+.ringkas div:nth-child(1){background:color-mix(in srgb,var(--c1) 17%,var(--surface))}
+.ringkas div:nth-child(2){background:color-mix(in srgb,var(--c2) 17%,var(--surface))}
+.ringkas div:nth-child(3){background:color-mix(in srgb,var(--c3) 20%,var(--surface))}
+.ringkas b{display:block;font:600 1.2rem var(--serif)}
+.ringkas span{color:var(--muted);font-size:.92rem}
+
+section{padding:60px 0 0}
+h2{display:inline-block;font:600 clamp(1.6rem,4vw,2.1rem)/1.15 var(--serif);margin:0 0 22px;padding-bottom:8px;background:var(--pelangi) 0 100%/300% 5px no-repeat;animation:geser 7s linear infinite}
+.tentang{max-width:64ch;font-size:1.1rem;margin:0}
+
+dl{display:grid;grid-template-columns:max-content 1fr;margin:0;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+dt,dd{margin:0;padding:14px 22px;border-bottom:1px solid var(--line)}
+dt{color:var(--muted);font-weight:500}
+dd{font-weight:600;overflow-wrap:anywhere}
+dt:nth-of-type(odd),dd:nth-of-type(odd){background:color-mix(in srgb,var(--c4) 11%,var(--surface))}
+dt:last-of-type,dd:last-of-type{border-bottom:0}
+dd a{color:var(--link)}
+
+.garis{list-style:none;margin:0;padding:0 0 0 28px;border-left:3px solid;border-image:linear-gradient(var(--c1),var(--c2),var(--c3),var(--c4)) 1}
+.garis li{position:relative;padding:0 0 26px}
+.garis li::before{content:"";position:absolute;left:-37px;top:6px;width:15px;height:15px;border-radius:50%;border:3px solid var(--surface);animation:denyut 2.4s ease-out infinite}
+.garis li:nth-child(4n+1)::before{background:var(--c1);--w:var(--c1)}
+.garis li:nth-child(4n+2)::before{background:var(--c2);--w:var(--c2)}
+.garis li:nth-child(4n+3)::before{background:var(--c3);--w:var(--c3)}
+.garis li:nth-child(4n+4)::before{background:var(--c4);--w:var(--c4)}
+.garis .tahun{display:inline-block;padding:2px 10px;border-radius:6px;font-weight:700;font-size:.85rem}
+.garis li:nth-child(4n+1) .tahun{background:color-mix(in srgb,var(--c1) 24%,var(--surface))}
+.garis li:nth-child(4n+2) .tahun{background:color-mix(in srgb,var(--c2) 24%,var(--surface))}
+.garis li:nth-child(4n+3) .tahun{background:color-mix(in srgb,var(--c3) 28%,var(--surface))}
+.garis li:nth-child(4n+4) .tahun{background:color-mix(in srgb,var(--c4) 24%,var(--surface))}
+.garis h3{margin:6px 0 0;font:700 1.15rem var(--sans)}
+.garis p{margin:0;color:var(--muted)}
+
+.dua{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,56px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.chips li{padding:8px 16px;border-radius:999px;border:1.5px solid;font-weight:600;transition:transform .25s;cursor:default}
+.chips li:hover{transform:translateY(-4px) rotate(-3deg) scale(1.08)}
+.chips li:nth-child(4n+1){border-color:var(--c1);background:color-mix(in srgb,var(--c1) 15%,var(--surface))}
+.chips li:nth-child(4n+2){border-color:var(--c2);background:color-mix(in srgb,var(--c2) 15%,var(--surface))}
+.chips li:nth-child(4n+3){border-color:var(--c3);background:color-mix(in srgb,var(--c3) 20%,var(--surface))}
+.chips li:nth-child(4n+4){border-color:var(--c5);background:color-mix(in srgb,var(--c5) 17%,var(--surface))}
+
+footer{margin-top:80px;color:#fff;background:linear-gradient(120deg,#5b21b6,#be185d,#ea580c,#0891b2,#5b21b6);background-size:300% 300%;animation:geser 16s ease-in-out infinite alternate}
+footer .wrap{padding-top:28px;padding-bottom:28px;font-size:.92rem;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* muncul saat di-scroll */
+.js .rev{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.js .rev.on{opacity:1;transform:none}
+
+@keyframes geser{to{background-position:100% 50%}}
+@keyframes kilau{to{background-position:-250% 0}}
+@keyframes melayang{50%{transform:translate(30px,-26px) scale(1.12)}}
+@keyframes putar{to{--a:360deg}}
+@keyframes napas{50%{transform:scale(.985)}}
+@keyframes jalan{to{transform:translateX(-50%)}}
+@keyframes denyut{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--w) 60%,transparent)}80%,100%{box-shadow:0 0 0 12px transparent}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rev{opacity:1;transform:none}
+}
+@media (max-width:720px){
+  .hero .wrap{grid-template-columns:1fr}
+  .fotobox{width:170px;order:-1;border-radius:90px 90px 16px 16px}
+  .foto{border-radius:84px 84px 11px 11px;font-size:3.4rem}
+  .ringkas{grid-template-columns:1fr}
+  .dua{grid-template-columns:1fr}
+  dl{grid-template-columns:1fr}
+  dt{padding-bottom:0;border-bottom:0}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav aria-label="Menu halaman">
+  <div class="wrap">
+    <a href="#tentang">Tentang</a>
+    <a href="#data">Data diri</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#pengalaman">Pengalaman</a>
+    <a href="#minat">Keahlian</a>
+    <button id="tema" type="button" aria-label="Ganti tema terang atau gelap">Ganti tema</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  <div class="wrap">
+    <div>
+      <p class="sapaan">Halo, perkenalkan saya</p>
+      <h1>Viesta Ikue Ayu Ariyanti</h1>
+      <p class="lead">Siswa kelas 3 SMKN 4 Padalarang jurusan Perangkat Lunak dan Gim (PPLG), tinggal di Bandung Barat.</p>
+    </div>
+    <div class="fotobox">
+      <div class="foto"><img src="esta.jpeg" alt="Foto Viesta" onerror="this.parentNode.textContent='VA'"></div>
+    </div>
+  </div>
+</header>
+
+<div class="pita" aria-hidden="true"><div>
+  <span>Siswa SMKN 4 Padalarang</span><span>PPLG</span><span>Taekwondo</span><span>Bandung Barat</span><span>Kelas 3 SMK</span>
+  <span>Siswa SMKN 4 Padalarang</span><span>PPLG</span><span>Taekwondo</span><span>Bandung Barat</span><span>Kelas 3 SMK</span>
+  <span>Siswa SMKN 4 Padalarang</span><span>PPLG</span><span>Taekwondo</span><span>Bandung Barat</span><span>Kelas 3 SMK</span>
+  <span>Siswa SMKN 4 Padalarang</span><span>PPLG</span><span>Taekwondo</span><span>Bandung Barat</span><span>Kelas 3 SMK</span>
+</div></div>
+
+<main class="wrap">
+  <div class="ringkas rev">
+    <div><b>Kelas 3 SMK</b><span>Jurusan PPLG</span></div>
+    <div><b>20 Mei 2009</b><span>Lahir di Bandung Barat</span></div>
+    <div><b>Anak pertama</b><span>Dari 2 bersaudara</span></div>
+  </div>
+
+  <section id="tentang" class="rev">
+    <h2>Tentang saya</h2>
+    <p class="tentang">Halo, nama saya Viesta Ikue Ayu Ariyanti. Kalian boleh memanggil saya Ayu, atau panggilan lain yang paling nyaman. Saya anak pertama dari dua bersaudara, lahir pada 20 Mei 2009 di Bandung Barat. Sekarang saya duduk di kelas 3 SMK dan bersekolah di SMKN 4 Padalarang, jurusan PPLG (Perangkat Lunak dan Gim).</p>
+  </section>
+
+  <section id="data" class="rev">
+    <h2>Data diri</h2>
+    <dl>
+      <dt>Nama lengkap</dt><dd>Viesta Ikue Ayu Ariyanti</dd>
+      <dt>Tempat, tanggal lahir</dt><dd>Bandung Barat, 20 Mei 2009</dd>
+      <dt>Jenis kelamin</dt><dd>Perempuan</dd>
+      <dt>Agama</dt><dd>Islam</dd>
+      <dt>Alamat</dt><dd>Kp. Pasirkihiang RT 04/RW 04, Ngamprah, Bandung Barat</dd>
+      <dt>Email</dt><dd><a href="mailto:viestaayu12@gmail.com">viestaayu12@gmail.com</a></dd>
+      <dt>Telepon</dt><dd><a href="tel:+6283832014339">0838-3201-4339</a></dd>
+    </dl>
+  </section>
+
+  <section id="pendidikan" class="rev">
+    <h2>Pendidikan</h2>
+    <ul class="garis">
+      <li><span class="tahun">2024 – 2027</span><h3>SMK</h3><p>SMKN 4 Padalarang, jurusan PPLG</p></li>
+      <li><span class="tahun">2021 – 2024</span><h3>SMP</h3><p>SMPN 1 Ngamprah</p></li>
+      <li><span class="tahun">2015 – 2021</span><h3>SD</h3><p>SDN 1 Ciharashas</p></li>
+      <li><span class="tahun">2014 – 2015</span><h3>TK</h3><p>RA At-Tibyaan</p></li>
+    </ul>
+  </section>
+
+  <section id="pengalaman" class="rev">
+    <h2>Pengalaman</h2>
+    <ul class="garis">
+      <li><span class="tahun">2025 – sekarang</span><h3>Petugas absensi</h3><p>Ekstrakurikuler Taekwondo</p></li>
+      <li><span class="tahun">2024 – sekarang</span><h3>Keamanan kelas</h3><p>Menjaga keamanan kelas</p></li>
+    </ul>
+  </section>
+
+  <section id="minat" class="dua rev">
+    <div>
+      <h2>Keahlian</h2>
+      <ul class="chips"><li>Komunikasi</li><li>Microsoft Office</li><li>Kerja tim</li><li>Manajemen waktu</li></ul>
+    </div>
+    <div>
+      <h2>Hobi</h2>
+      <ul class="chips"><li>Membaca</li><li>Olahraga</li><li>Musik</li><li>Nongkrong</li></ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y">2026</span> Viesta Ikue Ayu Ariyanti</span>
+    <span>SMKN 4 Padalarang · PPLG</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+document.documentElement.classList.add('js');
+(function(){
+  var r=document.documentElement,b=document.getElementById('tema');
+  try{var s=localStorage.getItem('tema');if(s)r.setAttribute('data-theme',s)}catch(e){}
+  b.addEventListener('click',function(){
+    var gelap=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+    var n=gelap?'light':'dark';
+    r.setAttribute('data-theme',n);
+    try{localStorage.setItem('tema',n)}catch(e){}
+  });
+  var els=document.querySelectorAll('.rev');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('on')})}
+  var bar=document.getElementById('bar');
+  addEventListener('scroll',function(){
+    var h=document.documentElement.scrollHeight-innerHeight;
+    bar.style.width=(h>0?scrollY/h*100:0)+'%';
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
